@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+  <title>Train Tracker</title>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <div class="titleArea">
+    <h1>Train Tracker!</h1>
+    <h3>Advanced Train Scheduler</h3>
+    <h5 id="currentTime"></h5>
+  </div>
+
+  <div class="mainArea">
+    <div class="headlineArea">
+      <h3>Current Train Schedule</h3>
+    </div>
+    <div class="trainList">
+      <table id="timeTable">
+        <thead>
+          <th id="trainName">Train Name</th>
+          <th id="trainDestinations">Destination</th>
+          <th id="trainFrequency">Frequency (min)</th>
+          <th id="trainArrival">Next Arrival</th>
+          <th id="minutesAway">Minutes Away</th>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+
+    </div>
+
+  </div>
+
+  <div class="mainArea">
+    <div class="headlineArea">
+      <h3>Add A Train!</h3>
+    </div>
+    <div class="inputArea">
+      <h5>Train Name</h5>
+      <input id="trainNameInput" type="text" name="" value="" placeholder="Enter Train Name">
+      <h5>Destination</h5>
+      <input id="destinationInput" type="text" name="" value="" placeholder="Enter Destination">
+      <h5>First Train Time (HH:mm-military time)</h5>
+      <input id="firstTimeInput" type="text" name="" value="" placeholder="First Train Time">
+      <h5>Frequency</h5>
+      <input id="frequencyInput" type="text" name="" value="" placeholder="Enter Frequency">
+      <br>
+      <button id="buttonSubmit" class="btn btn-warning" type="button" name="button">Submit</button>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <script type="text/javascript" src="./app.js">
+
+  </script>
+</body>
+
+</html>
